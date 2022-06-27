@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.paroapplication.Fragment.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_selectPatientFragment"
+            app:destination="@id/selectPatientFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_confirmFragment"
+            app:destination="@id/confirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.example.paroapplication.Fragment.RegisterFragment"
+        android:label="@string/ledger"
+        tools:layout="@layout/register_fragment" >
+        <action
+            android:id="@+id/action_ledgerFragment_to_patientFragment"
+            app:destination="@id/patientFragment" />
+        <action
+            android:id="@+id/action_dataFragment_to_staffFragment"
+            app:destination="@id/staffFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.example.paroapplication.Fragment.DataFragment"
+        android:label="@string/data"
+        tools:layout="@layout/data_fragment" >
+        <action
+            android:id="@+id/action_messageFragment_to_confirmFragment"
+            app:destination="@id/confirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.paroapplication.Fragment.AccountFragment"
+        android:label="@string/account"
+        tools:layout="@layout/account_fragment" >
+        <action
+            android:id="@+id/action_accountFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.paroapplication.Fragment.SignUpFragment"
+        android:label="register_fragment"
+        tools:layout="@layout/sign_up_fragment" />
+    <fragment
+        android:id="@+id/patientFragment"
+        android:name="com.example.paroapplication.Fragment.PatientFragment"
+        android:label="patient_fragment"
+        tools:layout="@layout/patient_fragment" >
+        <action
+            android:id="@+id/action_patientFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recordFragment"
+        android:name="com.example.paroapplication.Fragment.RecordFragment"
+        android:label="recordFragment"
+        tools:layout="@layout/record_fragment" >
+        <action
+            android:id="@+id/action_recordFragment_to_confirmFragment"
+            app:destination="@id/confirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmFragment"
+        android:name="com.example.paroapplication.Fragment.ConfirmFragment"
+        android:label="confirm_fragment"
+        tools:layout="@layout/confirm_fragment" >
+        <action
+            android:id="@+id/action_confirmFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectPatientFragment"
+        android:name="com.example.paroapplication.Fragment.SelectPatientFragment"
+        android:label="select_helper_fragment"
+        tools:layout="@layout/select_helper_fragment" >
+        <action
+            android:id="@+id/action_selectPatientFragment_to_selectHelperFragment"
+            app:destination="@id/selectHelperFragment" />
+        <action
+            android:id="@+id/action_selectPatientFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectHelperFragment"
+        android:name="com.example.paroapplication.Fragment.SelectHelperFragment"
+        android:label="SelectHelperFragment" >
+        <action
+            android:id="@+id/action_selectHelperFragment_to_recordFragment"
+            app:destination="@id/recordFragment" />
+        <action
+            android:id="@+id/action_selectHelperFragment_to_selectPatientFragment"
+            app:destination="@id/selectPatientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/staffFragment"
+        android:name="com.example.paroapplication.Fragment.StaffFragment"
+        android:label="staff_fragment"
+        tools:layout="@layout/staff_fragment" >
+        <action
+            android:id="@+id/action_staffFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+    </fragment>
+</navigation>

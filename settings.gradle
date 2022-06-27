@@ -1,0 +1,2 @@
+rootProject.name='Paro Application'
+include ':app'

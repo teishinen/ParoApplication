@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable-v21/ic_baseline_arrow_left_50.xml" value="0.21296296296296297" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable-xxhdpi/translucent2.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/button_style.xml" value="0.10648148148148148" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/button_style_blue.xml" value="0.10648148148148148" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/button_style_gray.xml" value="0.10648148148148148" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/ic_account.xml" value="0.40370370370370373" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/ic_baseline_arrow_left_24.xml" value="0.21296296296296297" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/ic_baseline_arrow_left_50.xml" value="0.21296296296296297" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/ic_baseline_arrow_left_60.xml" value="0.21296296296296297" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/ic_baseline_arrow_right_50.xml" value="0.21296296296296297" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/ic_baseline_keyboard_checked2.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/ic_baseline_keyboard_unchecked2.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/ic_baseline_keyboard_unchecked3.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/ic_card.xml" value="0.40370370370370373" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/ic_change_button1.xml" value="0.3645833333333333" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/ic_change_button2.xml" value="0.3645833333333333" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/ic_staff01.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/ic_staff02.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/radio02.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/radio03.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/radio04.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/switch_plan_notice_selector01.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/switch_plan_notice_selector02.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/switch_plan_notice_selector03.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/tab_button01.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/tab_button02.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/tab_button03.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/tab_button04.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/translucent3.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/drawable/translucent4.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout-v21/activity_main.xml" value="0.15885416666666666" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout-v23/cell_record_button.xml" value="0.3484375" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout-v23/dialog_edit_text01.xml" value="0.25" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout-v23/record01_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout-v23/record_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/activity_main.xml" value="0.36096014492753625" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/caregiver1_fragment.xml" value="0.30932971014492755" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/cell_calendar.xml" value="0.41822916666666665" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/cell_history_record.xml" value="0.41822916666666665" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/cell_history_record_detail.xml" value="0.2875" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/cell_patient_record.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/cell_patient_record_detail.xml" value="0.5" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/cell_record.xml" value="0.33" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/cell_record_item.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/cell_staff_record.xml" value="0.2246376811594203" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/cell_staff_record_detail.xml" value="0.1296875" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/confirm_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/data_fragment.xml" value="0.30932971014492755" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/dialog_patient.xml" value="1.0" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/dialog_record.xml" value="0.25" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/dropdown_style.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/dropdown_style2.xml" value="0.41822916666666665" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/layout.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/patient_fragment.xml" value="0.30932971014492755" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/record02_fragment.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/record_fragment.xml" value="0.32864583333333336" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/register_fragment.xml" value="0.3472222222222222" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/select_helper_fragment.xml" value="0.33125" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/sign_up_fragment.xml" value="0.403125" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/spinner_item.xml" value="0.403125" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/spinner_item2.xml" value="0.403125" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/layout/staff_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/YLN/StudioProjects/ParoApplication/app/src/main/res/menu/bottom_menu.xml" value="0.43125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

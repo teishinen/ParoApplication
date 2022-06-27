@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/dataFragment"
+        android:icon="@drawable/ic_data"
+        android:title="@string/register" />
+    <item
+        android:id="@+id/selectPatientFragment"
+        android:icon="@drawable/ic_record"
+        android:title="@string/record" />
+    <item
+        android:id="@+id/messageFragment"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:title="@string/data" />
+    <item
+        android:id="@+id/accountFragment"
+        android:icon="@drawable/ic_account"
+        android:title="@string/account" />
+</menu>

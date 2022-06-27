@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="patient_for_view_holder01" type="id"/>
+    <item name="patient_for_view_holder02" type="id"/>
+    <item name="patient_for_view_holder03" type="id"/>
+</resources>
