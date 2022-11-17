@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edf2f8"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:gravity="center"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_paro_tittle"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarInDataFragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:text="は触れ合い活動中の動作を選択してください "
+        android:layout_height="40dp"></TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                ></androidx.recyclerview.widget.RecyclerView>
+            <LinearLayout
+                android:id="@+id/ll_add"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_item_add"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+
+
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="+その他 "
+                    android:textColor="@color/gray"
+                    android:paddingLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"></TextView>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_baseline_add_circle_outline_24"
+                    android:layout_height="30dp"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="150dp"
+            android:text="戾る"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:background="#a2a2a2"
+            android:layout_height="40dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="150dp"
+            android:text=" 次^"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="#6694be"
+            android:layout_height="40dp"></TextView>
+    </LinearLayout>
+</LinearLayout>

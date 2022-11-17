@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button2"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Fragment.AccountFragment">
+
+    <ImageView
+        android:id="@+id/imageViewParo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/TODO"
+        android:src="@drawable/paro"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <ImageView
+        android:id="@+id/imageViewTittle"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:contentDescription="TODO"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/paro0"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewParo"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:background="@drawable/translucent"
+        android:ems="10"
+        android:hint="@string/inputName"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline11"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:autofillHints=""
+        android:background="@drawable/translucent"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="12sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="?attr/colorButtonNormal"
+            android:bufferType="spannable"
+            android:text="@string/register"
+            />
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/signin"
+            android:textColor="@color/cardview_light_background"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_margin="10dp"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:background="@drawable/icon_01"
+            />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_margin="10dp"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:background="@drawable/icon_02"
+           />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_margin="10dp"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:background="@drawable/icon_03"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

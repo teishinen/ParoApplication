@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2sp"
+    android:background="@drawable/card_view_background"
+    android:minHeight="0dp"
+    android:paddingStart="5sp"
+    android:paddingTop="10sp"
+    android:paddingEnd="5sp"
+    android:paddingBottom="10sp">
+
+    <TextView
+        android:id="@+id/textViewDateInCellPatientRecord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2021/04/04" />
+
+    <TextView
+        android:id="@+id/textViewTimeInCellPatientRecord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="@dimen/textSizeRegular"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/textViewDateInCellPatientRecord"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDateInCellPatientRecord"
+        tools:text="12:00:00~13:20:00" />
+
+    <TextView
+        android:id="@+id/textViewCareHoursInCellPatientRecord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/textSizeRegular"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTimeInCellPatientRecord"
+        app:layout_constraintStart_toEndOf="@+id/textViewTimeInCellPatientRecord"
+        tools:text="1h20min" />
+
+    <Switch
+        android:id="@+id/switchDetail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:checked="false"
+        android:visibility="gone"
+        android:thumb="@drawable/switch_plan_notice_selector01"
+        android:track="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCareHoursInCellPatientRecord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/lightGray"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeInCellPatientRecord"
+        tools:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/scrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:minHeight="60dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view7"
+        tools:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPatientRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textViewNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/noData"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView01"
+        app:layout_constraintStart_toStartOf="@+id/scrollView01"
+        app:layout_constraintTop_toBottomOf="@+id/view7"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

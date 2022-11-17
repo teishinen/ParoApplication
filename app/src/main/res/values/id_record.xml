@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="record_for_view_holder01" type="id"/>
+    <item name="record_for_view_holder02" type="id"/>
+    <item name="record_for_view_holder_patient" type="id"/>
+    <item name="record_for_view_holder_history" type="id"/>
+    <item name="record_for_view_holder_history_detail" type="id"/>
+    <item name="record_for_view_holder_patient_detail" type="id"/>
+    <item name="record_for_view_holder_calendar" type="id"/>
+    <item name="record_for_view_holder_staff_detail" type="id"/>
+    <item name="record_for_view_holder_staff" type="id"/>
+
+</resources>

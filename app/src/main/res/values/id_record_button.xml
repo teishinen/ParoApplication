@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="record_condition_for_view_holder" type="id"/>
+    <item name="record_Expression_for_view_holder" type="id"/>
+    <item name="record_gaze_for_view_holder" type="id"/>
+    <item name="record_talk_for_view_holder" type="id"/>
+    <item name="record_Interaction_for_view_holder" type="id"/>
+    <item name="record_problemBehavior_for_view_holder" type="id"/>
+    <item name="record_remark_for_view_holder" type="id"/>
+    <item name="record_intervene_for_view_holder" type="id"/>
+
+
+</resources>

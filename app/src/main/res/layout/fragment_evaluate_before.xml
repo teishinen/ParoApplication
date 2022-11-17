@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edf2f8"
+    android:orientation="vertical"
+    tools:context=".Fragment.DataFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarInPatientFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/abc_vector_test" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:gravity="center"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_paro_tittle"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarInDataFragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="?attr/colorPrimary"
+        android:text="パ0使用前の状態を評価しでください"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_evaluate_before"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:layout_width="90dp"
+                    android:src="@mipmap/ic_reduce_1"
+                    android:layout_height="90dp"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="-1"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:background="@drawable/bg_evaluate_before"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:layout_width="90dp"
+                    android:src="@mipmap/ic_reduce_2"
+                    android:layout_height="90dp"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="-2"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:background="@drawable/bg_evaluate_before"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="0dp">
+           <ImageView
+
+               android:layout_width="90dp"
+               android:src="@mipmap/ic_0"
+               android:layout_height="90dp"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="@drawable/bg_evaluate_before"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:layout_width="90dp"
+                    android:src="@mipmap/ic_1"
+                    android:layout_height="90dp"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="1"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:background="@drawable/bg_evaluate_before"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:layout_width="90dp"
+                    android:src="@mipmap/ic_2"
+                    android:layout_height="90dp"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="2"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:background="@drawable/bg_evaluate_before"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+      <LinearLayout
+          android:orientation="horizontal"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="60dp">
+          <TextView
+              android:layout_width="150dp"
+              android:text="戾る"
+              android:gravity="center"
+              android:layout_marginRight="20dp"
+              android:textColor="@color/white"
+              android:background="#a2a2a2"
+              android:layout_height="40dp"></TextView>
+
+          <TextView
+              android:layout_width="150dp"
+              android:text=" 次^"
+              android:layout_margin="20dp"
+              android:gravity="center"
+              android:textColor="@color/white"
+              android:background="#6694be"
+              android:layout_height="40dp"></TextView>
+      </LinearLayout>
+
+</LinearLayout>

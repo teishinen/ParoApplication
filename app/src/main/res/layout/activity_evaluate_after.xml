@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edf2f8"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarInPatientFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/abc_vector_test" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:gravity="center"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_paro_tittle"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarInDataFragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="?attr/colorPrimary"
+        android:text="@string/after_hint"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_evaluate_before"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:id="@+id/ll_reduce_1"
+                android:layout_width="0dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:layout_width="90dp"
+                    android:src="@mipmap/ic_reduce_1"
+                    android:layout_height="90dp"></ImageView>
+                <TextView
+                    android:id="@+id/tv_reduce_1"
+                    android:layout_width="wrap_content"
+                    android:text="-1"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:background="@drawable/bg_evaluate_before"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_record_2"
+                android:layout_width="0dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:layout_width="90dp"
+                    android:src="@mipmap/ic_reduce_2"
+                    android:layout_height="90dp"></ImageView>
+                <TextView
+                    android:id="@+id/tv_reduce_2"
+                    android:layout_width="wrap_content"
+                    android:text="-2"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:background="@drawable/bg_evaluate_before"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_zero"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="0dp">
+            <ImageView
+
+                android:layout_width="90dp"
+                android:src="@mipmap/ic_0"
+                android:layout_height="90dp"></ImageView>
+            <TextView
+                android:id="@+id/tv_zero"
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="@drawable/bg_evaluate_before"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_add_one"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:layout_width="90dp"
+                    android:src="@mipmap/ic_1"
+                    android:layout_height="90dp"></ImageView>
+                <TextView
+                    android:id="@+id/tv_add_1"
+                    android:layout_width="wrap_content"
+                    android:text="1"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:background="@drawable/bg_evaluate_before"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_two"
+                android:layout_width="0dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:layout_width="90dp"
+                    android:src="@mipmap/ic_2"
+                    android:layout_height="90dp"></ImageView>
+                <TextView
+                    android:id="@+id/tv_add_2"
+                    android:layout_width="wrap_content"
+                    android:text="2"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:background="@drawable/bg_evaluate_before"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:background="#a2a2a2"
+            android:gravity="center"
+            android:text="戻る"
+            android:textColor="@color/white"></TextView>
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="#6694be"
+            android:gravity="center"
+            android:text="次へ"
+            android:textColor="@color/white"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

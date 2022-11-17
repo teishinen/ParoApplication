@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="before_hint">現在、患者さんのムード値を評価してください</string>
+    <string name="is_delete">このデータを削除します？</string>
+    <string name="sure_delete">よろしいですか？</string>
+    <string name="yes_delete">キャンセル</string>
+    <string name="no_delete">削除</string>
+</resources>

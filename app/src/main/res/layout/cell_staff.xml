@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutCellStaff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/card_view_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/imageViewInCellStaff"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card_view_background"
+        android:contentDescription="@string/todo"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewStaffName1InCellStaff"
+        app:layout_constraintStart_toStartOf="@+id/textViewStaffName1InCellStaff"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_old_man" />
+
+    <TextView
+        android:id="@+id/textViewStaffIdInCellStaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/id"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInCellStaff"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewStaffId1InCellStaff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintEnd_toStartOf="@+id/guideline29"
+        app:layout_constraintStart_toEndOf="@+id/textViewStaffIdInCellStaff"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor"
+        tools:text="00000001" />
+
+    <TextView
+        android:id="@+id/textViewStaffName1InCellStaff"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:textColor="@color/brown"
+        android:textSize="@dimen/textSizeRegular"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewInCellStaff"
+        tools:ignore="LabelFor"
+        tools:text="山田　太郎" />
+
+    <TextView
+        android:id="@+id/textViewStaffAgeInCellStaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/Age"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInCellStaff"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStaffIdInCellStaff" />
+
+    <TextView
+        android:id="@+id/textViewStaffAge1InCellStaff"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:maxEms="4"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintStart_toEndOf="@+id/textViewStaffAgeInCellStaff"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStaffId1InCellStaff"
+        tools:ignore="LabelFor"
+        tools:text="65" />
+
+    <TextView
+        android:id="@+id/textViewStaffSexInCellStaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/sex"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintStart_toEndOf="@+id/textViewStaffAge1InCellStaff"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStaffId1InCellStaff" />
+
+    <TextView
+        android:id="@+id/textViewStaffSex1InCellStaff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:maxEms="4"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintEnd_toStartOf="@+id/guideline29"
+        app:layout_constraintStart_toEndOf="@+id/textViewStaffSexInCellStaff"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStaffId1InCellStaff"
+        tools:ignore="LabelFor"
+        tools:text="男" />
+
+    <TextView
+        android:id="@+id/textViewStaffWeeklyTherapyHoursInCellStaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/WeeklyTherapyHours2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInCellStaff"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStaffAgeInCellStaff" />
+
+    <TextView
+        android:id="@+id/textViewStaffWeeklyCareHours1InCellStaff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintEnd_toStartOf="@+id/guideline29"
+        app:layout_constraintStart_toEndOf="@+id/textViewStaffWeeklyTherapyHoursInCellStaff"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStaffSex1InCellStaff"
+        tools:ignore="LabelFor"
+        tools:text="10.5H" />
+
+    <TextView
+        android:id="@+id/textViewStaffSymptomInCellStaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/staffIntervene"
+        android:visibility="invisible"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInCellStaff"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStaffWeeklyTherapyHoursInCellStaff" />
+
+    <TextView
+        android:id="@+id/textViewStaffSymptom1InCellStaff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textSizeRegular"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/guideline29"
+        app:layout_constraintStart_toEndOf="@+id/textViewStaffSymptomInCellStaff"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStaffWeeklyTherapyHoursInCellStaff"
+        tools:ignore="LabelFor"
+        tools:text="暴言" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <Button
+        android:id="@+id/buttonDeleteInCellStaff"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/ic_baseline_delete_24"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

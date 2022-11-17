@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutCellPatient"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginEnd="1dp"
+    android:gravity="center_vertical"
+    android:background="@color/whiteCard"
+    android:clickable="true"
+    android:focusable="true"
+    android:visibility="visible">
+
+
+    <ImageView
+        android:id="@+id/checkBoxInCellSelectPatient"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_baseline_radio_button_unchecked_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textViewPatientName1InCellSelectPatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textViewPatientId1InCellSelectPatient"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="LabelFor"
+            tools:text="山田　太郎" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewPatientId1InCellSelectPatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:autofillHints=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/textSizeRegular"
+               />
+
+            <TextView
+                android:id="@+id/textViewPatientAge1InCellSelectPatient"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:autofillHints=""
+                android:maxEms="4"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/textSizeRegular"
+                 />
+
+            <TextView
+                android:id="@+id/textViewPatientSex1InCellSelectPatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/gray"
+                android:textSize="@dimen/textSizeRegular"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

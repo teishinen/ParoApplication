@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/card_view_background">
+
+    <TextView
+        android:id="@+id/textViewDateInCellHistoryRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSizeRegular"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2021/01/01" />
+
+    <TextView
+        android:id="@+id/textViewTimeInCellHistroyRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDateInCellHistoryRecord"
+        app:layout_constraintStart_toEndOf="@+id/textViewDateInCellHistoryRecord"
+        app:layout_constraintTop_toTopOf="@+id/textViewDateInCellHistoryRecord"
+        tools:text="08:00:00 - 09:30:00" />
+
+    <TextView
+        android:id="@+id/textViewTherapyHoursInCellHistoryRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintStart_toEndOf="@+id/textViewTimeInCellHistroyRecord"
+        app:layout_constraintTop_toTopOf="@+id/textViewTimeInCellHistroyRecord"
+        tools:text="(90min)" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view15"
+        tools:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerViewInCellHistoryRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" />
+    </ScrollView>
+
+    <Switch
+        android:id="@+id/switchHistoryDetail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:checked="false"
+        android:thumb="@drawable/switch_plan_notice_selector01"
+        android:track="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorSearch"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/scrollView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDateInCellHistoryRecord"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutCellPatient"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/card_view_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/imageViewInDialogPatient"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card_view_background"
+        android:contentDescription="@string/todo"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPatientName1InCellPatient"
+        app:layout_constraintStart_toStartOf="@+id/textViewPatientName1InCellPatient"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_old_man" />
+
+    <TextView
+        android:id="@+id/textViewPatientIdInCellPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/id"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInDialogPatient"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPatientId1InCellPatient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintEnd_toStartOf="@+id/guideline29"
+        app:layout_constraintStart_toEndOf="@+id/textViewPatientIdInCellPatient"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor"
+        tools:text="00000001" />
+
+    <TextView
+        android:id="@+id/textViewPatientName1InCellPatient"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:textColor="@color/brown"
+        android:textSize="@dimen/textSizeRegular"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewInDialogPatient"
+        tools:ignore="LabelFor"
+        tools:text="山田　太郎" />
+
+    <TextView
+        android:id="@+id/textViewPatientAgeInCellPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/Age"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInDialogPatient"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPatientIdInCellPatient" />
+
+    <TextView
+        android:id="@+id/textViewPatientAge1InCellPatient"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:maxEms="4"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintStart_toEndOf="@+id/textViewPatientAgeInCellPatient"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPatientId1InCellPatient"
+        tools:ignore="LabelFor"
+        tools:text="65" />
+
+    <TextView
+        android:id="@+id/textViewPatientSexInCellPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/sex"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintStart_toEndOf="@+id/textViewPatientAge1InCellPatient"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPatientId1InCellPatient" />
+
+    <TextView
+        android:id="@+id/textViewPatientSex1InCellPatient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:maxEms="4"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintEnd_toStartOf="@+id/guideline29"
+        app:layout_constraintStart_toEndOf="@+id/textViewPatientSexInCellPatient"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPatientId1InCellPatient"
+        tools:ignore="LabelFor"
+        tools:text="男" />
+
+    <TextView
+        android:id="@+id/textViewPatientWeeklyTherapyHoursInCellPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/WeeklyTherapyHours2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInDialogPatient"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPatientAgeInCellPatient" />
+
+    <TextView
+        android:id="@+id/textViewPatientWeeklyCareHours1InCellPatient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintEnd_toStartOf="@+id/guideline29"
+        app:layout_constraintStart_toEndOf="@+id/textViewPatientWeeklyTherapyHoursInCellPatient"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPatientSex1InCellPatient"
+        tools:ignore="LabelFor"
+        tools:text="10.5H" />
+
+    <TextView
+        android:id="@+id/textViewPatientPatientSymptomInCellPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/problemBehavior"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInDialogPatient"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPatientWeeklyTherapyHoursInCellPatient" />
+
+    <TextView
+        android:id="@+id/textViewPatientSymptom1InCellPatient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:visibility="gone"
+        android:ems="10"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textSizeRegular"
+        app:layout_constraintEnd_toEndOf="@+id/guideline29"
+        app:layout_constraintStart_toEndOf="@+id/textViewPatientPatientSymptomInCellPatient"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPatientWeeklyTherapyHoursInCellPatient"
+        tools:ignore="LabelFor"
+        tools:text="暴言" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <Button
+        android:id="@+id/buttonDeleteInCellPatient"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/ic_baseline_delete_24"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

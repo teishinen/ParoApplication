@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:text="今日"
+        android:paddingLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_200"
+        android:layout_height="40dp"></TextView>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:orientation="vertical"
+       >
+       <TextView
+           android:layout_width="match_parent"
+           android:gravity="center_vertical"
+           android:textSize="16sp"
+           android:text=" 記録期間 "
+           android:paddingLeft="20dp"
+           android:textStyle="bold"
+           android:textColor="#bcbfbf"
+           android:layout_height="40dp"></TextView>
+       <com.github.mikephil.charting.charts.BarChart
+           android:id="@+id/hc_time"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           ></com.github.mikephil.charting.charts.BarChart>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_type"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="40dp"></androidx.recyclerview.widget.RecyclerView>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text=" 回数  "
+            android:textColor="#bcbfbf"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text=" 記録期間 "
+            android:visibility="gone"
+            android:textColor="#bcbfbf"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/hc_account"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></com.github.mikephil.charting.charts.BarChart>
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_type_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:text=" --ム-ド変化  "
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#bcbfbf"
+            android:layout_height="40dp"></TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ll_before"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+</LinearLayout>
